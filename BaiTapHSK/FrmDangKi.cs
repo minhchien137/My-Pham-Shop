@@ -46,10 +46,9 @@ namespace BaiTapHSK
             SqlCommand sqlCommand = sqlConnection.CreateCommand();
             sqlCommand.CommandType = CommandType.StoredProcedure;
 
-            sqlCommand.CommandText = "insertAccount";
+            sqlCommand.CommandText = "ThemTaiKhoan";
             sqlCommand.Parameters.AddWithValue("@sTenTaiKhoan", txtTênDN.Text);
             sqlCommand.Parameters.AddWithValue("@sMatKhau", txtMatKhau.Text);
-            sqlCommand.Parameters.AddWithValue("@sEmail", txtEmail.Text);
             int i = sqlCommand.ExecuteNonQuery();
             if (i > 0)
             {

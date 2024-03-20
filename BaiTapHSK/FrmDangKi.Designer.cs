@@ -32,11 +32,9 @@
             this.txtTênDN = new System.Windows.Forms.TextBox();
             this.txtMatKhau = new System.Windows.Forms.TextBox();
             this.txtMatKhau2 = new System.Windows.Forms.TextBox();
-            this.txtEmail = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.btnDangKi = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -75,14 +73,6 @@
             this.txtMatKhau2.Size = new System.Drawing.Size(330, 34);
             this.txtMatKhau2.TabIndex = 3;
             // 
-            // txtEmail
-            // 
-            this.txtEmail.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(217, 348);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(330, 34);
-            this.txtEmail.TabIndex = 4;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -112,16 +102,6 @@
             this.label4.Size = new System.Drawing.Size(152, 22);
             this.label4.TabIndex = 7;
             this.label4.Text = "Nhập lại mật khẩu";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(61, 354);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 22);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Email";
             // 
             // linkLabel1
             // 
@@ -154,11 +134,9 @@
             this.ClientSize = new System.Drawing.Size(835, 533);
             this.Controls.Add(this.btnDangKi);
             this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtMatKhau2);
             this.Controls.Add(this.txtMatKhau);
             this.Controls.Add(this.txtTênDN);
@@ -177,11 +155,9 @@
         private System.Windows.Forms.TextBox txtTênDN;
         private System.Windows.Forms.TextBox txtMatKhau;
         private System.Windows.Forms.TextBox txtMatKhau2;
-        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Button btnDangKi;
     }
