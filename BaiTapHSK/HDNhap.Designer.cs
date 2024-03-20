@@ -46,7 +46,8 @@ namespace BaiTapHSK
             this.btnxoa = new System.Windows.Forms.Button();
             this.btnthem = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.maskTrangThai = new System.Windows.Forms.MaskedTextBox();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            this.maskTrangThai = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvhoadonnhap)).BeginInit();
             this.panel1.SuspendLayout();
@@ -164,6 +165,7 @@ namespace BaiTapHSK
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.panel1.Controls.Add(this.btnRefresh);
             this.panel1.Controls.Add(this.btndong);
             this.panel1.Controls.Add(this.btnboqua);
             this.panel1.Controls.Add(this.btntimkiem);
@@ -182,7 +184,7 @@ namespace BaiTapHSK
             this.btndong.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btndong.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btndong.Location = new System.Drawing.Point(900, 10);
+            this.btndong.Location = new System.Drawing.Point(952, 10);
             this.btndong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btndong.Name = "btndong";
             this.btndong.Size = new System.Drawing.Size(93, 34);
@@ -196,7 +198,7 @@ namespace BaiTapHSK
             this.btnboqua.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnboqua.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnboqua.Location = new System.Drawing.Point(737, 10);
+            this.btnboqua.Location = new System.Drawing.Point(642, 11);
             this.btnboqua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnboqua.Name = "btnboqua";
             this.btnboqua.Size = new System.Drawing.Size(93, 34);
@@ -210,7 +212,7 @@ namespace BaiTapHSK
             this.btntimkiem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btntimkiem.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btntimkiem.Location = new System.Drawing.Point(573, 10);
+            this.btntimkiem.Location = new System.Drawing.Point(475, 11);
             this.btntimkiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btntimkiem.Name = "btntimkiem";
             this.btntimkiem.Size = new System.Drawing.Size(93, 34);
@@ -224,7 +226,7 @@ namespace BaiTapHSK
             this.btnsua.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnsua.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsua.Location = new System.Drawing.Point(412, 10);
+            this.btnsua.Location = new System.Drawing.Point(160, 11);
             this.btnsua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnsua.Name = "btnsua";
             this.btnsua.Size = new System.Drawing.Size(93, 34);
@@ -238,7 +240,7 @@ namespace BaiTapHSK
             this.btnxoa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnxoa.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnxoa.Location = new System.Drawing.Point(249, 10);
+            this.btnxoa.Location = new System.Drawing.Point(308, 11);
             this.btnxoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnxoa.Name = "btnxoa";
             this.btnxoa.Size = new System.Drawing.Size(107, 34);
@@ -252,7 +254,7 @@ namespace BaiTapHSK
             this.btnthem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnthem.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnthem.Location = new System.Drawing.Point(85, 10);
+            this.btnthem.Location = new System.Drawing.Point(13, 10);
             this.btnthem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnthem.Name = "btnthem";
             this.btnthem.Size = new System.Drawing.Size(96, 34);
@@ -272,14 +274,27 @@ namespace BaiTapHSK
             this.label6.Text = "Trạng Thái";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRefresh.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefresh.Location = new System.Drawing.Point(801, 11);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(93, 34);
+            this.btnRefresh.TabIndex = 6;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
             // maskTrangThai
             // 
-            this.maskTrangThai.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maskTrangThai.Location = new System.Drawing.Point(707, 401);
-            this.maskTrangThai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.maskTrangThai.Location = new System.Drawing.Point(707, 399);
+            this.maskTrangThai.Multiline = true;
             this.maskTrangThai.Name = "maskTrangThai";
-            this.maskTrangThai.Size = new System.Drawing.Size(185, 27);
-            this.maskTrangThai.TabIndex = 11;
+            this.maskTrangThai.Size = new System.Drawing.Size(185, 28);
+            this.maskTrangThai.TabIndex = 12;
             // 
             // HDNhap
             // 
@@ -319,6 +334,7 @@ namespace BaiTapHSK
         private System.Windows.Forms.Button btnxoa;
         private System.Windows.Forms.Button btnthem;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.MaskedTextBox maskTrangThai;
+        private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.TextBox maskTrangThai;
     }
 }

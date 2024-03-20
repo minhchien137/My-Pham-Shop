@@ -218,12 +218,19 @@ namespace BaiTapHSK
                      "dNgayNhapSP", dt_ngaylap.Text.Trim());
                 (dgvhoadonnhap.DataSource as DataTable).DefaultView.RowFilter = RowFilter;
             }
+            else if(maskTrangThai.Text != "")
+            {
+                string RowFilter = string.Format("CONVERT({0}, System.String) LIKE N'%{1}%'",
+                     "sTrangThai", maskTrangThai.Text.Trim());
+                (dgvhoadonnhap.DataSource as DataTable).DefaultView.RowFilter = RowFilter;
+            }
         }
         public void reset()
         {
             mtb_mahd.Text = "";
             mtb_manv.Text = "";
             dt_ngaylap.Text = "";
+            maskTrangThai.Text = "";
         }
 
         private void btnboqua_Click(object sender, EventArgs e)
@@ -260,6 +267,11 @@ namespace BaiTapHSK
         private void label6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            HDNhap_Load(sender, e); 
         }
     }
 }
