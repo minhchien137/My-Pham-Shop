@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaiTapHSK", "BaiTapHSK\BaiTapHSK.csproj", "{3C0C39CC-0396-4A08-9F59-398E964C4AEA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C0C39CC-0396-4A08-9F59-398E964C4AEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C0C39CC-0396-4A08-9F59-398E964C4AEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C0C39CC-0396-4A08-9F59-398E964C4AEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C0C39CC-0396-4A08-9F59-398E964C4AEA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EFB6B378-AD17-47E2-A5D8-F418C38EFC05}
+	EndGlobalSection
+EndGlobal
