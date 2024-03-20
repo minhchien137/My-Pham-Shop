@@ -64,9 +64,18 @@ namespace BaiTapHSK
 
         private void hóaĐơnNhậpToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            HDNhap form1 = new HDNhap();
-            form1.MdiParent = this;
-            form1.Show();
+            
+
+            if (isLoggedIn == true)
+            {
+                HDNhap form1 = new HDNhap();
+                form1.MdiParent = this;
+                form1.Show();
+            }
+            else
+            {
+                MessageBox.Show("Vui Lòng Đăng Nhập Để Sử Dụng Chức Năng Này", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            }
         }
 
         private void nhânViênToolStripMenuItem_Click(object sender, EventArgs e)
@@ -133,7 +142,6 @@ namespace BaiTapHSK
         private void đăngNhậpToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmDangNhap dangNhap = new FrmDangNhap();
-            //dangNhap.Show();
             if (dangNhap.ShowDialog() == DialogResult.OK)
             {
                 isLoggedIn = true;
