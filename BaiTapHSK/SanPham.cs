@@ -159,7 +159,7 @@ namespace BaiTapHSK
         {
 
             
-            if (MessageBox.Show("Bạn có muốn thoát không ?", "thong bao", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MessageBox.Show("Bạn có muốn thoát không ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 Application.Exit();
             }
