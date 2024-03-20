@@ -26,19 +26,19 @@ namespace BaiTapHSK
             string constr = ConfigurationManager.ConnectionStrings["QLMP"].ConnectionString;
             using (SqlConnection conn = new SqlConnection(constr))
             {
-                using (SqlCommand cmd = new SqlCommand("select * from HoaDonNhap", conn))
+                using (SqlCommand cmd = new SqlCommand("SELECT * FROM tblHoaDonNhap", conn))
                 {
                     conn.Open();
                     using (SqlDataAdapter adt = new SqlDataAdapter(cmd))
                     {
-                        DataTable dt = new DataTable();
+                        DataTable dt = new DataTable(); 
                         adt.Fill(dt);
                         dgvhoadonnhap.DataSource = dt;
                     }
                     dgvhoadonnhap.Columns[0].HeaderText = "Mã hóa đơn";
                     dgvhoadonnhap.Columns[1].HeaderText = "Mã nhân viên";
-                    dgvhoadonnhap.Columns[2].HeaderText = "Tên nhân viên";
-                    dgvhoadonnhap.Columns[3].HeaderText = "Ngày lập HĐ";
+                    dgvhoadonnhap.Columns[2].HeaderText = "Ngày lập ";
+                    dgvhoadonnhap.Columns[3].HeaderText = "Trạng Thái";
 
                 }
             }
@@ -58,7 +58,7 @@ namespace BaiTapHSK
             }
             if (dt_ngaylap.Text == "")
             {
-                MessageBox.Show("Vui lòng nhập giới tính", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Vui lòng nhập ngày lập hóa đơn", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 dt_ngaylap.Focus();
                 return false;
             }
@@ -76,13 +76,15 @@ namespace BaiTapHSK
                         using (SqlCommand cmd = conn.CreateCommand())
                         {
                             cmd.Connection = conn;
-                            cmd.CommandText = "themHD";
+                            cmd.CommandText = "ThemHoaDonNhap";
                             cmd.CommandType = CommandType.StoredProcedure;
                             cmd.Parameters.AddWithValue("@mahd", mtb_mahd.Text);
                             cmd.Parameters.AddWithValue("@manv", mtb_manv.Text);
-                            cmd.Parameters.AddWithValue("@ngaylap", dt_ngaylap.Text);
+                            cmd.Parameters.AddWithValue("@ngaynhap", dt_ngaylap.Text);
+                            cmd.Parameters.AddWithValue("@trangthai", maskTrangThai.Text);
+
                             conn.Open();
-                            using (SqlCommand check = new SqlCommand("select *from HoaDonNhap ", conn))
+                            using (SqlCommand check = new SqlCommand("SELECT * FROM tblHoaDonNhap ", conn))
                             {
                                 bool KT = false;
 
@@ -150,13 +152,14 @@ namespace BaiTapHSK
                 {
   
                     cmd.Connection = conn;
-                    cmd.CommandText = "suaHD";
+                    cmd.CommandText = "SuaHoaDonNhap";
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@mahd", mtb_mahd.Text);
                     cmd.Parameters.AddWithValue("@manv", mtb_manv.Text);
                     cmd.Parameters.AddWithValue("@ngaylap", dt_ngaylap.Text);
+                    cmd.Parameters.AddWithValue("@trangthai", maskTrangThai.Text);
                     conn.Open();
-                    using (SqlCommand check = new SqlCommand("select *from HoaDonNhap where sTrangThai like N'%Đã thanh toán%'", conn))
+                    using (SqlCommand check = new SqlCommand("SELECT * FROM tblHoaDonNhap where sTrangThai like N'%Đã thanh toán%'", conn))
                     {
                         bool KT = false;
 
@@ -239,7 +242,24 @@ namespace BaiTapHSK
             i = dgvhoadonnhap.CurrentRow.Index;
             mtb_mahd.Text = dgvhoadonnhap.Rows[i].Cells[0].Value.ToString();
             mtb_manv.Text = dgvhoadonnhap.Rows[i].Cells[1].Value.ToString();
-            dt_ngaylap.Text = dgvhoadonnhap.Rows[i].Cells[3].Value.ToString();
+            dt_ngaylap.Text = dgvhoadonnhap.Rows[i].Cells[2].Value.ToString();
+            maskTrangThai.Text = dgvhoadonnhap.Rows[i].Cells[3].Value.ToString();
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -66,7 +66,7 @@ namespace BaiTapHSK
         {
             
 
-            if (isLoggedIn == true)
+            if (isLoggedIn != true)
             {
                 HDNhap form1 = new HDNhap();
                 form1.MdiParent = this;

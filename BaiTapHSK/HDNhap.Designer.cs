@@ -45,6 +45,8 @@ namespace BaiTapHSK
             this.btnsua = new System.Windows.Forms.Button();
             this.btnxoa = new System.Windows.Forms.Button();
             this.btnthem = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.maskTrangThai = new System.Windows.Forms.MaskedTextBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvhoadonnhap)).BeginInit();
             this.panel1.SuspendLayout();
@@ -55,6 +57,8 @@ namespace BaiTapHSK
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Controls.Add(this.maskTrangThai);
+            this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.dgvhoadonnhap);
             this.panel2.Controls.Add(this.dt_ngaylap);
             this.panel2.Controls.Add(this.label1);
@@ -68,6 +72,7 @@ namespace BaiTapHSK
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(976, 535);
             this.panel2.TabIndex = 5;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // dgvhoadonnhap
             // 
@@ -87,7 +92,7 @@ namespace BaiTapHSK
             // dt_ngaylap
             // 
             this.dt_ngaylap.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dt_ngaylap.Location = new System.Drawing.Point(429, 450);
+            this.dt_ngaylap.Location = new System.Drawing.Point(242, 396);
             this.dt_ngaylap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dt_ngaylap.Mask = "00/00/0000";
             this.dt_ngaylap.Name = "dt_ngaylap";
@@ -99,7 +104,7 @@ namespace BaiTapHSK
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(153, 7);
+            this.label1.Location = new System.Drawing.Point(426, 14);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(192, 23);
             this.label1.TabIndex = 0;
@@ -108,7 +113,7 @@ namespace BaiTapHSK
             // mtb_manv
             // 
             this.mtb_manv.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mtb_manv.Location = new System.Drawing.Point(429, 417);
+            this.mtb_manv.Location = new System.Drawing.Point(707, 328);
             this.mtb_manv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mtb_manv.Mask = "000";
             this.mtb_manv.Name = "mtb_manv";
@@ -119,7 +124,7 @@ namespace BaiTapHSK
             // mtb_mahd
             // 
             this.mtb_mahd.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mtb_mahd.Location = new System.Drawing.Point(429, 382);
+            this.mtb_mahd.Location = new System.Drawing.Point(242, 328);
             this.mtb_mahd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.mtb_mahd.Mask = "000";
             this.mtb_mahd.Name = "mtb_mahd";
@@ -130,7 +135,7 @@ namespace BaiTapHSK
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(351, 453);
+            this.label4.Location = new System.Drawing.Point(164, 399);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(68, 19);
             this.label4.TabIndex = 5;
@@ -140,7 +145,7 @@ namespace BaiTapHSK
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(351, 417);
+            this.label3.Location = new System.Drawing.Point(622, 331);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 19);
             this.label3.TabIndex = 4;
@@ -150,7 +155,7 @@ namespace BaiTapHSK
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(351, 383);
+            this.label2.Location = new System.Drawing.Point(164, 329);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 19);
             this.label2.TabIndex = 3;
@@ -170,6 +175,7 @@ namespace BaiTapHSK
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1080, 53);
             this.panel1.TabIndex = 6;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btndong
             // 
@@ -255,6 +261,26 @@ namespace BaiTapHSK
             this.btnthem.UseVisualStyleBackColor = true;
             this.btnthem.Click += new System.EventHandler(this.btnthem_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(608, 404);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(79, 19);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Trạng Thái";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // maskTrangThai
+            // 
+            this.maskTrangThai.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maskTrangThai.Location = new System.Drawing.Point(707, 401);
+            this.maskTrangThai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.maskTrangThai.Name = "maskTrangThai";
+            this.maskTrangThai.Size = new System.Drawing.Size(185, 27);
+            this.maskTrangThai.TabIndex = 11;
+            // 
             // HDNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -292,5 +318,7 @@ namespace BaiTapHSK
         private System.Windows.Forms.Button btnsua;
         private System.Windows.Forms.Button btnxoa;
         private System.Windows.Forms.Button btnthem;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.MaskedTextBox maskTrangThai;
     }
 }
