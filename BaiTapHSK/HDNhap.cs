@@ -31,7 +31,7 @@ namespace BaiTapHSK
                     conn.Open();
                     using (SqlDataAdapter adt = new SqlDataAdapter(cmd))
                     {
-                        DataTable dt = new DataTable(); 
+                        DataTable dt = new DataTable();
                         adt.Fill(dt);
                         dgvhoadonnhap.DataSource = dt;
                     }
@@ -110,7 +110,7 @@ namespace BaiTapHSK
                                 }
 
                             }
-                           
+
 
                             MessageBox.Show("Thêm hoá đơn thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
@@ -150,7 +150,7 @@ namespace BaiTapHSK
             {
                 using (SqlCommand cmd = conn.CreateCommand())
                 {
-  
+
                     cmd.Connection = conn;
                     cmd.CommandText = "SuaHoaDonNhap";
                     cmd.CommandType = CommandType.StoredProcedure;
@@ -185,8 +185,8 @@ namespace BaiTapHSK
                         }
 
                     }
-                
-                   
+
+
                 }
             }
         }
@@ -218,7 +218,7 @@ namespace BaiTapHSK
                      "dNgayNhapSP", dt_ngaylap.Text.Trim());
                 (dgvhoadonnhap.DataSource as DataTable).DefaultView.RowFilter = RowFilter;
             }
-            else if(maskTrangThai.Text != "")
+            else if (maskTrangThai.Text != "")
             {
                 string RowFilter = string.Format("CONVERT({0}, System.String) LIKE N'%{1}%'",
                      "sTrangThai", maskTrangThai.Text.Trim());
@@ -271,7 +271,30 @@ namespace BaiTapHSK
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
-            HDNhap_Load(sender, e); 
+            HDNhap_Load(sender, e);
+        }
+
+        private void btnCTHDNhap_Click(object sender, EventArgs e)
+        {
+            string constr = ConfigurationManager.ConnectionStrings["QLMP"].ConnectionString;
+            using (SqlConnection conn = new SqlConnection(constr))
+            {
+                using (SqlCommand cmd = new SqlCommand("SELECT * FROM tblHoaDonNhap", conn))
+                {
+                    conn.Open();
+                    using (SqlDataAdapter adt = new SqlDataAdapter(cmd))
+                    {
+                        DataTable dt = new DataTable();
+                        adt.Fill(dt);
+                        dgvhoadonnhap.DataSource = dt;
+                    }
+                    dgvhoadonnhap.Columns[0].HeaderText = "Mã hóa đơn";
+                    dgvhoadonnhap.Columns[1].HeaderText = "Mã nhân viên";
+                    dgvhoadonnhap.Columns[2].HeaderText = "Ngày lập ";
+                    dgvhoadonnhap.Columns[3].HeaderText = "Trạng Thái";
+
+                }
+            }
         }
     }
 }

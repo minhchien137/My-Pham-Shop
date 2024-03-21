@@ -50,10 +50,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnInHDB = new System.Windows.Forms.Button();
             this.dtNgayGiao = new System.Windows.Forms.DateTimePicker();
             this.dtNgayDat = new System.Windows.Forms.DateTimePicker();
             this.label10 = new System.Windows.Forms.Label();
-            this.btnInHDB = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -311,6 +311,17 @@
             this.panel2.Size = new System.Drawing.Size(1105, 210);
             this.panel2.TabIndex = 37;
             // 
+            // btnInHDB
+            // 
+            this.btnInHDB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnInHDB.Location = new System.Drawing.Point(849, 173);
+            this.btnInHDB.Name = "btnInHDB";
+            this.btnInHDB.Size = new System.Drawing.Size(100, 31);
+            this.btnInHDB.TabIndex = 23;
+            this.btnInHDB.Text = "print";
+            this.btnInHDB.UseVisualStyleBackColor = true;
+            this.btnInHDB.Click += new System.EventHandler(this.btnInHDB_Click);
+            // 
             // dtNgayGiao
             // 
             this.dtNgayGiao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -340,17 +351,6 @@
             this.label10.Size = new System.Drawing.Size(96, 22);
             this.label10.TabIndex = 36;
             this.label10.Text = "Trạng Thái";
-            // 
-            // btnInHDB
-            // 
-            this.btnInHDB.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInHDB.Location = new System.Drawing.Point(853, 177);
-            this.btnInHDB.Name = "btnInHDB";
-            this.btnInHDB.Size = new System.Drawing.Size(75, 23);
-            this.btnInHDB.TabIndex = 39;
-            this.btnInHDB.Text = "in";
-            this.btnInHDB.UseVisualStyleBackColor = true;
-            this.btnInHDB.Click += new System.EventHandler(this.btnInHDB_Click);
             // 
             // HoaDonBan
             // 
