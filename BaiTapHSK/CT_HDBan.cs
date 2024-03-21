@@ -70,7 +70,7 @@ namespace BaiTapHSK
                     cmd.Parameters.AddWithValue("@iSoluong", txt_Soluong.Text);
                     cnn.Open();
 
-                    using (SqlCommand check = new SqlCommand("select *from HD where sTrangThai like N'%Đã thanh toán%'", cnn))
+                    using (SqlCommand check = new SqlCommand("select * from tblCT_HDBan where sTrangThai like N'%Đã thanh toán%'", cnn))
                     {
                         bool KT = false;
 
@@ -113,7 +113,7 @@ namespace BaiTapHSK
                     cmd.Parameters.AddWithValue("@sMaSP", txt_Masp.Text);
 
                     cnn.Open();
-                    using (SqlCommand check = new SqlCommand("select *from HD where sTrangThai like N'%Đã thanh toán%'", cnn))
+                    using (SqlCommand check = new SqlCommand("select *from tblCT_HDBan where sTrangThai like N'%Đã thanh toán%'", cnn))
                     {
                         bool KT = false;
                         using (SqlDataReader reader = check.ExecuteReader())

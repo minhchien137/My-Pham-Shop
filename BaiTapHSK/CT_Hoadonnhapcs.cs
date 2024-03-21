@@ -160,5 +160,10 @@ namespace BaiTapHSK
         {
             CT_Hoadonnhapcs_Load(sender,e);
         }
+
+        private void btnsua_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

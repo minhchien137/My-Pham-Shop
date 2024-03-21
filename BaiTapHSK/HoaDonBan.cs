@@ -374,9 +374,9 @@ namespace BaiTapHSK
 
         private void btnInHDB_Click(object sender, EventArgs e)
         {
-            BaoCao_HDB hoaDonBan = new BaoCao_HDB();
+           // BaoCao_HDB hoaDonBan = new BaoCao_HDB();
             
-            hoaDonBan.Show();
+           // hoaDonBan.Show();
         }
 
         /*private void button1_Click(object sender, EventArgs e)

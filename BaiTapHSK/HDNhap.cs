@@ -238,10 +238,7 @@ namespace BaiTapHSK
             reset();
         }
 
-        private void btndong_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+
 
         private void dgvhoadonnhap_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -295,6 +292,11 @@ namespace BaiTapHSK
 
                 }
             }
+        }
+
+        private void btninrpnhap_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

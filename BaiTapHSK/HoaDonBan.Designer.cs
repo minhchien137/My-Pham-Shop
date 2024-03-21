@@ -310,12 +310,12 @@
             // 
             // btnInHDB
             // 
-            this.btnInHDB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnInHDB.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInHDB.Location = new System.Drawing.Point(849, 173);
             this.btnInHDB.Name = "btnInHDB";
             this.btnInHDB.Size = new System.Drawing.Size(100, 31);
             this.btnInHDB.TabIndex = 23;
-            this.btnInHDB.Text = "print";
+            this.btnInHDB.Text = "in rp";
             this.btnInHDB.UseVisualStyleBackColor = true;
             this.btnInHDB.Click += new System.EventHandler(this.btnInHDB_Click);
             // 
