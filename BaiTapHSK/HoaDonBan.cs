@@ -115,7 +115,7 @@ namespace BaiTapHSK
                     cmd.Parameters.AddWithValue("@DiaChiGiao", txtDiaChi.Text);
                     cmd.Parameters.AddWithValue("@TrangThai", cb_trangthai.Text);
 
-                    using (SqlCommand check = new SqlCommand("select *from HD", cnn))
+                    using (SqlCommand check = new SqlCommand("SELECT * FROM tblHoaDonBan", cnn))
                     {
                         bool KT = false;
                         cnn.Open();
@@ -165,7 +165,7 @@ namespace BaiTapHSK
                     cmd.Parameters.AddWithValue("@DiaChiGiao", txtDiaChi.Text);
                     cmd.Parameters.AddWithValue("@TrangThai", cb_trangthai.Text);
                     cnn.Open();
-                    using (SqlCommand check = new SqlCommand("select *from HD where sTrangThai like N'%Đã thanh toán%'", cnn))
+                    using (SqlCommand check = new SqlCommand("SELECT * FROM tblHoaDonBan where sTrangThai like N'%Đã thanh toán%'", cnn))
                     {
                         bool KT = false;
 
@@ -208,7 +208,7 @@ namespace BaiTapHSK
                         cmd.Connection = cnn;
                         cmd.CommandText = "XoaHDB";
                         cmd.CommandType = CommandType.StoredProcedure;
-                        cmd.Parameters.AddWithValue("@MaHD", txtMaKH.Text);
+                        cmd.Parameters.AddWithValue("@MaHD", txtMaHD.Text);
                         cnn.Open();
                         cmd.ExecuteNonQuery();
                         HoaDonBan_Load(sender, e);
