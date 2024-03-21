@@ -40,7 +40,7 @@ namespace BaiTapHSK
             {
 
 
-                using (SqlCommand cmd = new SqlCommand("select*from HD", con))
+                using (SqlCommand cmd = new SqlCommand("SELECT * FROM dbo.tblHoaDonBan", con))
                 {
                     con.Open();
                     using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
@@ -58,14 +58,12 @@ namespace BaiTapHSK
                         cb_trangthai.Items.Add("Chưa thanh toán");
                     }
                     dataGridView1.Columns[0].HeaderText = "Mã hóa đơn";
-                    dataGridView1.Columns[1].HeaderText = "Tên khách hàng";
+                    dataGridView1.Columns[1].HeaderText = "Mã nhân viên";
                     dataGridView1.Columns[2].HeaderText = "Mã khách hàng";
-                    dataGridView1.Columns[3].HeaderText = "Tên nhân viên";
-                    dataGridView1.Columns[4].HeaderText = "Mã nhân viên";
-                    dataGridView1.Columns[5].HeaderText = "Ngày đặt hàng";
-                    dataGridView1.Columns[6].HeaderText = "Ngày giao hàng";
-                    dataGridView1.Columns[7].HeaderText = "Địa chỉ giao";
-                    dataGridView1.Columns[8].HeaderText = "Trạng thái";
+                    dataGridView1.Columns[3].HeaderText = "Ngày đặt hàng";
+                    dataGridView1.Columns[4].HeaderText = "Ngày giao hàng";
+                    dataGridView1.Columns[5].HeaderText = "Địa chỉ giao";
+                    dataGridView1.Columns[6].HeaderText = "Trạng thái";
                 }
 
             }
@@ -82,12 +80,12 @@ namespace BaiTapHSK
             if (dataGridView1.Rows.Count <= 0)
                 return;
             txtMaHD.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            txtMaNV.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
             txtMaKH.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            txtMaNV.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
-            dtNgayDat.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
-            dtNgayGiao.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
-            txtDiaChi.Text = dataGridView1.CurrentRow.Cells[7].Value.ToString();
-            cb_trangthai.Text = dataGridView1.CurrentRow.Cells[8].Value.ToString();
+            dtNgayDat.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            dtNgayGiao.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+            txtDiaChi.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+            cb_trangthai.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
             //txtMaHD.Text = dataGridView1.CurrentRow.Cells["iMaHD"].Value.ToString();
             //txtNgaydat.Text = dataGridView1.CurrentRow.Cells["dNgayDat"].Value.ToString();
             //txtNgayGiao.Text = dataGridView1.CurrentRow.Cells["dNgayGiao"].Value.ToString();
@@ -229,7 +227,7 @@ namespace BaiTapHSK
 
         private void HoaDonBan_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (MessageBox.Show("do you want to exit?", "thong bao", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MessageBox.Show("Bạn có muốn thoát không?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 e.Cancel = false;
             else
                 e.Cancel = true;
@@ -242,8 +240,9 @@ namespace BaiTapHSK
             txtDiaChi.Text = ("");
             txtMaKH.Text = ("");
             txtMaNV.Text = ("");
-            dtNgayDat.Text = ("");
-            dtNgayGiao.Text = ("");
+            dtNgayDat.Text = "";
+            dtNgayGiao.Text = "";
+            cb_trangthai.Text = "";
         }
 
         /* private void Loc_Click(object sender, EventArgs e)

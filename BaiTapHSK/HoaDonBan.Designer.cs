@@ -189,7 +189,6 @@
             // 
             this.txtMaHD.Location = new System.Drawing.Point(220, 20);
             this.txtMaHD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtMaHD.Mask = "00000";
             this.txtMaHD.Name = "txtMaHD";
             this.txtMaHD.Size = new System.Drawing.Size(175, 22);
             this.txtMaHD.TabIndex = 19;
@@ -200,7 +199,6 @@
             // 
             this.txtMaKH.Location = new System.Drawing.Point(220, 60);
             this.txtMaKH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtMaKH.Mask = "00000";
             this.txtMaKH.Name = "txtMaKH";
             this.txtMaKH.Size = new System.Drawing.Size(175, 22);
             this.txtMaKH.TabIndex = 20;
@@ -210,7 +208,6 @@
             // 
             this.txtMaNV.Location = new System.Drawing.Point(220, 102);
             this.txtMaNV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtMaNV.Mask = "00000";
             this.txtMaNV.Name = "txtMaNV";
             this.txtMaNV.Size = new System.Drawing.Size(175, 22);
             this.txtMaNV.TabIndex = 21;

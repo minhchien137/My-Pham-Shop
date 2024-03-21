@@ -42,7 +42,6 @@ namespace BaiTapHSK
                     dgvhdn.Columns[1].HeaderText = "Mã sản phẩm";
                     dgvhdn.Columns[2].HeaderText = "Giá nhập";
                     dgvhdn.Columns[3].HeaderText = "Số lượng";
-                    dgvhdn.Columns[4].HeaderText = "Tổng tiền";
                 }
 
             }
@@ -55,7 +54,7 @@ namespace BaiTapHSK
             txt_Masp.Text = row.Cells["sMaSP"].Value.ToString();
             txt_Gianhap.Text = row.Cells["fGiaNhap"].Value.ToString();
            txt_Soluong.Text = row.Cells["iSoluong"].Value.ToString();
-            tbTongTien.Text = row.Cells["fTongTien"].Value.ToString();
+  
         }
         
         private void btnthem_Click(object sender, EventArgs e)
@@ -66,12 +65,11 @@ namespace BaiTapHSK
                 using (SqlCommand cmd = cnn.CreateCommand())
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.CommandText = "insertCTHDN";
+                    cmd.CommandText = "themCTHDN";
                     cmd.Parameters.AddWithValue("@iMaHD", txt_Mahd.Text);
                     cmd.Parameters.AddWithValue("@sMaSP", txt_Masp.Text);
                     cmd.Parameters.AddWithValue("@fGiaNhap", txt_Gianhap.Text);
                     cmd.Parameters.AddWithValue("@iSoluong", txt_Soluong.Text);
-                    cmd.Parameters.AddWithValue("@fThanhTien", tbTongTien.Text);
                     cnn.Open();
                     using (SqlCommand check = new SqlCommand("select *from HoaDonNhap where sTrangThai like N'%Đã thanh toán%'", cnn))
                     {
@@ -156,7 +154,6 @@ namespace BaiTapHSK
             txt_Masp.Text = "";
             txt_Soluong.Text = "";
             txt_Gianhap.Text = "";
-            tbTongTien.Text = "";
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)

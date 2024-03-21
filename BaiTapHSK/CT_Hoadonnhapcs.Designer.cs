@@ -45,10 +45,8 @@ namespace BaiTapHSK
             this.txt_Gianhap = new System.Windows.Forms.TextBox();
             this.errCheck = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.tbTongTien = new System.Windows.Forms.TextBox();
-            this.btnHuy = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
+            this.btnHuy = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvhdn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errCheck)).BeginInit();
             this.panel1.SuspendLayout();
@@ -71,7 +69,7 @@ namespace BaiTapHSK
             // 
             this.btntimkiem.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btntimkiem.Location = new System.Drawing.Point(491, 139);
-            this.btntimkiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btntimkiem.Margin = new System.Windows.Forms.Padding(4);
             this.btntimkiem.Name = "btntimkiem";
             this.btntimkiem.Size = new System.Drawing.Size(106, 42);
             this.btntimkiem.TabIndex = 80;
@@ -82,7 +80,7 @@ namespace BaiTapHSK
             // 
             this.btnsua.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsua.Location = new System.Drawing.Point(163, 139);
-            this.btnsua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnsua.Margin = new System.Windows.Forms.Padding(4);
             this.btnsua.Name = "btnsua";
             this.btnsua.Size = new System.Drawing.Size(100, 42);
             this.btnsua.TabIndex = 78;
@@ -93,7 +91,7 @@ namespace BaiTapHSK
             // 
             this.btnxoa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnxoa.Location = new System.Drawing.Point(330, 139);
-            this.btnxoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnxoa.Margin = new System.Windows.Forms.Padding(4);
             this.btnxoa.Name = "btnxoa";
             this.btnxoa.Size = new System.Drawing.Size(100, 42);
             this.btnxoa.TabIndex = 77;
@@ -105,7 +103,7 @@ namespace BaiTapHSK
             // 
             this.btnthem.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnthem.Location = new System.Drawing.Point(6, 139);
-            this.btnthem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnthem.Margin = new System.Windows.Forms.Padding(4);
             this.btnthem.Name = "btnthem";
             this.btnthem.Size = new System.Drawing.Size(100, 42);
             this.btnthem.TabIndex = 76;
@@ -117,7 +115,7 @@ namespace BaiTapHSK
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 30);
+            this.label1.Location = new System.Drawing.Point(128, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(104, 22);
             this.label1.TabIndex = 81;
@@ -127,7 +125,7 @@ namespace BaiTapHSK
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 79);
+            this.label2.Location = new System.Drawing.Point(128, 76);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(114, 22);
             this.label2.TabIndex = 82;
@@ -137,7 +135,7 @@ namespace BaiTapHSK
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(349, 25);
+            this.label3.Location = new System.Drawing.Point(583, 25);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(82, 22);
             this.label3.TabIndex = 83;
@@ -147,7 +145,7 @@ namespace BaiTapHSK
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(349, 79);
+            this.label4.Location = new System.Drawing.Point(583, 79);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 22);
             this.label4.TabIndex = 84;
@@ -156,7 +154,7 @@ namespace BaiTapHSK
             // txt_Mahd
             // 
             this.txt_Mahd.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Mahd.Location = new System.Drawing.Point(131, 22);
+            this.txt_Mahd.Location = new System.Drawing.Point(256, 19);
             this.txt_Mahd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_Mahd.Name = "txt_Mahd";
             this.txt_Mahd.Size = new System.Drawing.Size(144, 30);
@@ -165,7 +163,7 @@ namespace BaiTapHSK
             // txt_Masp
             // 
             this.txt_Masp.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Masp.Location = new System.Drawing.Point(131, 76);
+            this.txt_Masp.Location = new System.Drawing.Point(256, 73);
             this.txt_Masp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_Masp.Name = "txt_Masp";
             this.txt_Masp.Size = new System.Drawing.Size(144, 30);
@@ -174,7 +172,7 @@ namespace BaiTapHSK
             // txt_Soluong
             // 
             this.txt_Soluong.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Soluong.Location = new System.Drawing.Point(437, 17);
+            this.txt_Soluong.Location = new System.Drawing.Point(671, 17);
             this.txt_Soluong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_Soluong.Name = "txt_Soluong";
             this.txt_Soluong.Size = new System.Drawing.Size(188, 30);
@@ -183,7 +181,7 @@ namespace BaiTapHSK
             // txt_Gianhap
             // 
             this.txt_Gianhap.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Gianhap.Location = new System.Drawing.Point(436, 76);
+            this.txt_Gianhap.Location = new System.Drawing.Point(670, 76);
             this.txt_Gianhap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_Gianhap.Name = "txt_Gianhap";
             this.txt_Gianhap.Size = new System.Drawing.Size(188, 30);
@@ -198,8 +196,6 @@ namespace BaiTapHSK
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.panel1.Controls.Add(this.btnRefresh);
             this.panel1.Controls.Add(this.btnHuy);
-            this.panel1.Controls.Add(this.tbTongTien);
-            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.txt_Gianhap);
             this.panel1.Controls.Add(this.btntimkiem);
             this.panel1.Controls.Add(this.txt_Soluong);
@@ -213,41 +209,10 @@ namespace BaiTapHSK
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(43, 380);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(981, 212);
             this.panel1.TabIndex = 89;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(686, 49);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(90, 22);
-            this.label5.TabIndex = 89;
-            this.label5.Text = "Tổng Tiền";
-            // 
-            // tbTongTien
-            // 
-            this.tbTongTien.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbTongTien.Location = new System.Drawing.Point(790, 44);
-            this.tbTongTien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbTongTien.Name = "tbTongTien";
-            this.tbTongTien.Size = new System.Drawing.Size(170, 30);
-            this.tbTongTien.TabIndex = 90;
-            // 
-            // btnHuy
-            // 
-            this.btnHuy.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHuy.Location = new System.Drawing.Point(670, 139);
-            this.btnHuy.Margin = new System.Windows.Forms.Padding(4);
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(106, 42);
-            this.btnHuy.TabIndex = 91;
-            this.btnHuy.Text = "Hủy";
-            this.btnHuy.UseVisualStyleBackColor = true;
-            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btnRefresh
             // 
@@ -260,6 +225,18 @@ namespace BaiTapHSK
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
+            // btnHuy
+            // 
+            this.btnHuy.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHuy.Location = new System.Drawing.Point(670, 139);
+            this.btnHuy.Margin = new System.Windows.Forms.Padding(4);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(106, 42);
+            this.btnHuy.TabIndex = 91;
+            this.btnHuy.Text = "Hủy";
+            this.btnHuy.UseVisualStyleBackColor = true;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // CT_Hoadonnhapcs
             // 
@@ -297,8 +274,6 @@ namespace BaiTapHSK
         private System.Windows.Forms.TextBox txt_Gianhap;
         private System.Windows.Forms.ErrorProvider errCheck;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox tbTongTien;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.Button btnHuy;
     }

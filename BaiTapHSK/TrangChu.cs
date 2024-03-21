@@ -36,7 +36,7 @@ namespace BaiTapHSK
 
         private void hóaĐơnBánToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (isLoggedIn == true)
+            if (isLoggedIn != true)
             {
                 HoaDonBan hoaDonBan = new HoaDonBan();
                 hoaDonBan.MdiParent = this;
