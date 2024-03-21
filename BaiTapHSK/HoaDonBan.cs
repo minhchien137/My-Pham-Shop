@@ -86,13 +86,7 @@ namespace BaiTapHSK
             dtNgayGiao.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
             txtDiaChi.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
             cb_trangthai.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
-            //txtMaHD.Text = dataGridView1.CurrentRow.Cells["iMaHD"].Value.ToString();
-            //txtNgaydat.Text = dataGridView1.CurrentRow.Cells["dNgayDat"].Value.ToString();
-            //txtNgayGiao.Text = dataGridView1.CurrentRow.Cells["dNgayGiao"].Value.ToString();
-            //txtDiaChi.Text = dataGridView1.CurrentRow.Cells["sDiaChiGiao"].Value.ToString();
-            //txtMaKH.Text = dataGridView1.CurrentRow.Cells["iMaKH"].Value.ToString();
-            //txtMaNV.Text = dataGridView1.CurrentRow.Cells["iMaNV"].Value.ToString();
-            //cb_trangthai.Text = dataGridView1.CurrentRow.Cells["sTrangThai"].Value.ToString();
+     
 
         }
 
@@ -265,7 +259,7 @@ namespace BaiTapHSK
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
 
-            /*if (txtMaHD.Text != "" && txtMaNV.Text != "" && txtMaKH.Text != "")
+            if (txtMaHD.Text != "" && txtMaNV.Text != "" && txtMaKH.Text != "")
             {
 
                 string RowFilter = string.Format("CONVERT({0}, System.String) like '%{1}%' " +
@@ -317,20 +311,24 @@ namespace BaiTapHSK
                             else
                             {
                                 
-                                if (txtNgaydat.Text != "" || txtNgayGiao.Text != "")
+                                if (dtNgayDat.Text != "" || dtNgayGiao.Text != "")
                                 {
 
                                     string RowFilter = string.Format("CONVERT({0}, System.String) like '%{1}%' or CONVERT({2}, System.String) like '%{3}%'" ,
-                                      "dNgayDat", txtNgaydat.Text.Trim(), "dNgayGiao", txtNgayGiao.Text.Trim());
+                                      "dNgayDat", dtNgayDat.Text.Trim(), "dNgayGiao", dtNgayGiao.Text.Trim());
                                     (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = RowFilter;
                                 }
+                              
+                                    
+ 
                                 
                                
                             }
+
                         }
                     } 
                 }
-            }*/
+            }
             string Filter = "CONVERT(iMaHD, System.String) <> ''";
             if (!string.IsNullOrEmpty(txtMaHD.Text)) { 
                 Filter += string.Format("AND  CONVERT({0}, System.String) like '%{1}%' ", "iMaHD" , txtMaHD.Text.Trim());
@@ -344,16 +342,16 @@ namespace BaiTapHSK
                 Filter += string.Format("AND  CONVERT({0}, System.String) like '%{1}%' ", "iMaNV", txtMaNV.Text.Trim());
 
             }
-            /*if(!string.IsNullOrEmpty(txtNgaydat.Text))
+            if(!string.IsNullOrEmpty(dtNgayDat.Text))
              {
-                 Filter += string.Format("AND  CONVERT({0}, System.String) like '%{1}%' ", "dNgayDat", txtNgaydat.Text.Trim());
+                 Filter += string.Format("AND  CONVERT({0}, System.String) like '%{1}%' ", "dNgayDat", dtNgayDat.Text.Trim());
 
              }
-            if (!string.IsNullOrEmpty(txtNgayGiao.Text))
+            if (!string.IsNullOrEmpty(dtNgayGiao.Text))
             {
-                Filter += string.Format("AND  CONVERT({0}, System.String) like '%{1}%' ", "dNgayGiao", txtNgayGiao.Text.Trim());
+                Filter += string.Format("AND  CONVERT({0}, System.String) like '%{1}%' ", "dNgayGiao", dtNgayGiao.Text.Trim());
 
-            }*/
+            }
 
             if (!string.IsNullOrEmpty(cb_trangthai.Text))
             {
@@ -361,6 +359,14 @@ namespace BaiTapHSK
 
             }
             (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = Filter;
+
+
+            if (txtDiaChi.Text != "")
+            {
+                string RowFilter = string.Format("CONVERT({0}, System.String) like '%{1}%'",
+                    "sDiaChiGiao", txtDiaChi.Text.Trim());
+                (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = RowFilter;
+            }
 
 
 

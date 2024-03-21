@@ -51,9 +51,9 @@
             this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnInHDB = new System.Windows.Forms.Button();
-            this.dtNgayGiao = new System.Windows.Forms.DateTimePicker();
-            this.dtNgayDat = new System.Windows.Forms.DateTimePicker();
             this.label10 = new System.Windows.Forms.Label();
+            this.dtNgayDat = new System.Windows.Forms.TextBox();
+            this.dtNgayGiao = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -281,9 +281,9 @@
             // panel2
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.panel2.Controls.Add(this.btnInHDB);
             this.panel2.Controls.Add(this.dtNgayGiao);
             this.panel2.Controls.Add(this.dtNgayDat);
+            this.panel2.Controls.Add(this.btnInHDB);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.btnTimKiem);
             this.panel2.Controls.Add(this.btn_reset);
@@ -319,26 +319,6 @@
             this.btnInHDB.UseVisualStyleBackColor = true;
             this.btnInHDB.Click += new System.EventHandler(this.btnInHDB_Click);
             // 
-            // dtNgayGiao
-            // 
-            this.dtNgayGiao.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtNgayGiao.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtNgayGiao.Location = new System.Drawing.Point(605, 60);
-            this.dtNgayGiao.Name = "dtNgayGiao";
-            this.dtNgayGiao.Size = new System.Drawing.Size(128, 27);
-            this.dtNgayGiao.TabIndex = 38;
-            this.dtNgayGiao.Value = new System.DateTime(2023, 7, 16, 0, 0, 0, 0);
-            // 
-            // dtNgayDat
-            // 
-            this.dtNgayDat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtNgayDat.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtNgayDat.Location = new System.Drawing.Point(605, 20);
-            this.dtNgayDat.Name = "dtNgayDat";
-            this.dtNgayDat.Size = new System.Drawing.Size(128, 27);
-            this.dtNgayDat.TabIndex = 37;
-            this.dtNgayDat.Value = new System.DateTime(2023, 7, 16, 0, 0, 0, 0);
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -348,6 +328,20 @@
             this.label10.Size = new System.Drawing.Size(96, 22);
             this.label10.TabIndex = 36;
             this.label10.Text = "Trạng Thái";
+            // 
+            // dtNgayDat
+            // 
+            this.dtNgayDat.Location = new System.Drawing.Point(605, 20);
+            this.dtNgayDat.Name = "dtNgayDat";
+            this.dtNgayDat.Size = new System.Drawing.Size(175, 22);
+            this.dtNgayDat.TabIndex = 37;
+            // 
+            // dtNgayGiao
+            // 
+            this.dtNgayGiao.Location = new System.Drawing.Point(605, 60);
+            this.dtNgayGiao.Name = "dtNgayGiao";
+            this.dtNgayGiao.Size = new System.Drawing.Size(175, 22);
+            this.dtNgayGiao.TabIndex = 38;
             // 
             // HoaDonBan
             // 
@@ -395,8 +389,8 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.DateTimePicker dtNgayGiao;
-        private System.Windows.Forms.DateTimePicker dtNgayDat;
         private System.Windows.Forms.Button btnInHDB;
+        private System.Windows.Forms.TextBox dtNgayGiao;
+        private System.Windows.Forms.TextBox dtNgayDat;
     }
 }
