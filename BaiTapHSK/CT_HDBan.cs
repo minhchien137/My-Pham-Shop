@@ -140,5 +140,63 @@ namespace BaiTapHSK
                 }
             }
         }
+
+        private void btntimkiem_Click(object sender, EventArgs e)
+        {
+            if (txt_Mahd.Text != "" && txt_Masp.Text != "")
+            {
+
+                string RowFilter = string.Format("CONVERT({0}, System.String) like '%{1}%' and CONVERT({2}, System.String)like '%{3}%'"
+                    , "iMaHD"
+                    , txt_Mahd.Text.Trim(), "sMaSP", txt_Masp.Text.Trim());
+                (dgvhdb.DataSource as DataTable).DefaultView.RowFilter = RowFilter;
+            }
+            else
+            {
+                if (txt_Mahd.Text != "")
+                {
+                    string RowFilter = string.Format("CONVERT({0}, System.String) like '%{1}%' ", "iMaHD"
+                            , txt_Mahd.Text.Trim());
+                    (dgvhdb.DataSource as DataTable).DefaultView.RowFilter = RowFilter;
+                }
+
+                else
+                {
+                    if (txt_Masp.Text != "")
+                    {
+
+                        string RowFilter = string.Format("CONVERT({0}, System.String) like '%{1}%'",
+                          "sMaSP", txt_Masp.Text.Trim());
+                        (dgvhdb.DataSource as DataTable).DefaultView.RowFilter = RowFilter;
+                    }
+
+                    else
+                    {
+
+                        if (txt_Giaban.Text != "")
+                        {
+
+                            string RowFilter = string.Format("CONVERT({0}, System.String) like '%{1}%'",
+                              "fGiaBan", txt_Giaban.Text.Trim());
+                            (dgvhdb.DataSource as DataTable).DefaultView.RowFilter = RowFilter;
+                        }
+                        else
+                        {
+                            string RowFilter = string.Format("CONVERT({0}, System.String) like '%{1}%'",
+                              "iSoluong", txt_Soluong.Text.Trim());
+                            (dgvhdb.DataSource as DataTable).DefaultView.RowFilter = RowFilter;
+                        }
+                    }
+                }
+            }
+        }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            txt_Giaban.Text = "";
+            txt_Mahd.Text = "";
+            txt_Masp.Text = "";
+            txt_Soluong.Text = "";
+        }
     }
 }
