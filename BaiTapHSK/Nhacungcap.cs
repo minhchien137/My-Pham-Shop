@@ -153,7 +153,7 @@ namespace BaiTapHSK
         private void btnthoat_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Bạn có chắc muốn thoát không?",
-              "Error", MessageBoxButtons.YesNoCancel);
+              "Thông báo", MessageBoxButtons.YesNoCancel);
             Application.Exit();
         }
     }

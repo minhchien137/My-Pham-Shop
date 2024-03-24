@@ -275,7 +275,7 @@ namespace BaiTapHSK
 
         private void KhachHang_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (MessageBox.Show("do you want to exit?", "thong bao", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 e.Cancel = false;
             else
                 e.Cancel = true;

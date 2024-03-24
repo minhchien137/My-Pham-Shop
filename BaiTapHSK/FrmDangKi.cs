@@ -72,6 +72,7 @@ namespace BaiTapHSK
             }
         
     }
+        /* -- Validating mat khau nhap phai dung */
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
