@@ -199,6 +199,9 @@
     <EmbeddedResource Include="BaoCao_HDN.resx">
       <DependentUpon>BaoCao_HDN.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChiTietSanPhamSon.resx">
+      <DependentUpon>ChiTietSanPhamSon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CT_HDBan.resx">
       <DependentUpon>CT_HDBan.cs</DependentUpon>
     </EmbeddedResource>
