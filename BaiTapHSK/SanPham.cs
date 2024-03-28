@@ -26,7 +26,7 @@ namespace BaiTapHSK
             string constr = ConfigurationManager.ConnectionStrings["QLMP"].ConnectionString;
             using (SqlConnection cnn = new SqlConnection(constr))
             {
-                using (SqlCommand smd = new SqlCommand("select * from SanPham", cnn))
+                using (SqlCommand smd = new SqlCommand("select * from tblSanPham", cnn))
                 {
                     cnn.Open();
                     using (SqlDataAdapter adt = new SqlDataAdapter(smd))
@@ -35,10 +35,9 @@ namespace BaiTapHSK
                         adt.Fill(dt);
                         dg_SP.DataSource = dt;
                     }
-
                     dg_SP.Columns[0].HeaderText = "Mã Sản Phẩm";
                     dg_SP.Columns[1].HeaderText = "Tên Sản Phẩm";
-                    dg_SP.Columns[2].HeaderText = "Tên Nhà Cung Cấp";
+                    dg_SP.Columns[2].HeaderText = "Mã Nhà Cung Cấp";
                     dg_SP.Columns[3].HeaderText = "Số lượng";
                     dg_SP.Columns[4].HeaderText = "Giá Hàng";
 

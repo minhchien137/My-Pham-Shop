@@ -70,6 +70,36 @@
     <Compile Include="BaoCao_HDN.Designer.cs">
       <DependentUpon>BaoCao_HDN.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChiTietSanPhamMatNa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChiTietSanPhamMatNa.Designer.cs">
+      <DependentUpon>ChiTietSanPhamMatNa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChiTietSanPhamNuocHoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChiTietSanPhamNuocHoa.Designer.cs">
+      <DependentUpon>ChiTietSanPhamNuocHoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChiTietSanPhamSon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChiTietSanPhamSon.Designer.cs">
+      <DependentUpon>ChiTietSanPhamSon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChiTietSanPhamSuaRuaMat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChiTietSanPhamSuaRuaMat.Designer.cs">
+      <DependentUpon>ChiTietSanPhamSuaRuaMat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChiTietSanPhamToner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChiTietSanPhamToner.Designer.cs">
+      <DependentUpon>ChiTietSanPhamToner.cs</DependentUpon>
+    </Compile>
     <Compile Include="CT_HDBan.cs">
       <SubType>Form</SubType>
     </Compile>

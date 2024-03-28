@@ -268,6 +268,7 @@
             this.sảnPhẩmToolStripMenuItem.Name = "sảnPhẩmToolStripMenuItem";
             this.sảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(272, 30);
             this.sảnPhẩmToolStripMenuItem.Text = "Sản Phẩm";
+            this.sảnPhẩmToolStripMenuItem.Click += new System.EventHandler(this.sảnPhẩmToolStripMenuItem_Click_1);
             // 
             // sảnPhẩmToolStripMenuItem3
             // 
@@ -287,30 +288,35 @@
             this.chiTiếtSảnPhẩmSonToolStripMenuItem.Name = "chiTiếtSảnPhẩmSonToolStripMenuItem";
             this.chiTiếtSảnPhẩmSonToolStripMenuItem.Size = new System.Drawing.Size(297, 30);
             this.chiTiếtSảnPhẩmSonToolStripMenuItem.Text = "Chi Tiết Son";
+            this.chiTiếtSảnPhẩmSonToolStripMenuItem.Click += new System.EventHandler(this.chiTiếtSảnPhẩmSonToolStripMenuItem_Click);
             // 
             // chiTiếtMặtNạToolStripMenuItem
             // 
             this.chiTiếtMặtNạToolStripMenuItem.Name = "chiTiếtMặtNạToolStripMenuItem";
             this.chiTiếtMặtNạToolStripMenuItem.Size = new System.Drawing.Size(297, 30);
             this.chiTiếtMặtNạToolStripMenuItem.Text = "Chi Tiết Mặt Nạ";
+            this.chiTiếtMặtNạToolStripMenuItem.Click += new System.EventHandler(this.chiTiếtMặtNạToolStripMenuItem_Click);
             // 
             // chiTiếtSữaRửaMặtToolStripMenuItem
             // 
             this.chiTiếtSữaRửaMặtToolStripMenuItem.Name = "chiTiếtSữaRửaMặtToolStripMenuItem";
             this.chiTiếtSữaRửaMặtToolStripMenuItem.Size = new System.Drawing.Size(297, 30);
             this.chiTiếtSữaRửaMặtToolStripMenuItem.Text = "Chi Tiết Sữa Rửa Mặt";
+            this.chiTiếtSữaRửaMặtToolStripMenuItem.Click += new System.EventHandler(this.chiTiếtSữaRửaMặtToolStripMenuItem_Click);
             // 
             // chiTiếtNướcHoaToolStripMenuItem
             // 
             this.chiTiếtNướcHoaToolStripMenuItem.Name = "chiTiếtNướcHoaToolStripMenuItem";
             this.chiTiếtNướcHoaToolStripMenuItem.Size = new System.Drawing.Size(297, 30);
             this.chiTiếtNướcHoaToolStripMenuItem.Text = "Chi Tiết Nước Hoa";
+            this.chiTiếtNướcHoaToolStripMenuItem.Click += new System.EventHandler(this.chiTiếtNướcHoaToolStripMenuItem_Click);
             // 
             // chiTiếtTonerToolStripMenuItem
             // 
             this.chiTiếtTonerToolStripMenuItem.Name = "chiTiếtTonerToolStripMenuItem";
             this.chiTiếtTonerToolStripMenuItem.Size = new System.Drawing.Size(297, 30);
             this.chiTiếtTonerToolStripMenuItem.Text = "Chi Tiết Toner";
+            this.chiTiếtTonerToolStripMenuItem.Click += new System.EventHandler(this.chiTiếtTonerToolStripMenuItem_Click);
             // 
             // TrangChu
             // 
