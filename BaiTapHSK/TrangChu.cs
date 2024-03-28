@@ -188,5 +188,10 @@ namespace BaiTapHSK
             FrmDangKi dangki = new FrmDangKi();
             dangki.Show();
         }
+
+        private void sảnPhẩmToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
