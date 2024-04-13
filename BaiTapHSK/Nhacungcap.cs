@@ -156,5 +156,13 @@ namespace BaiTapHSK
               "Thông báo", MessageBoxButtons.YesNoCancel);
             Application.Exit();
         }
+
+        private void dg_NCC_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtmancc.Text = dg_NCC.CurrentRow.Cells["iMaNCC"].Value.ToString();
+            txttennhacc.Text = dg_NCC.CurrentRow.Cells["sTenNCC"].Value.ToString();
+            txtdiachi.Text = dg_NCC.CurrentRow.Cells["sDiachi"].Value.ToString();
+            txtsdt.Text = dg_NCC.CurrentRow.Cells["sSDT"].Value.ToString();
+        }
     }
 }

@@ -71,9 +71,9 @@
             this.label1.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(243, 72);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(606, 37);
+            this.label1.Size = new System.Drawing.Size(658, 37);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Chương trình quản lý cửa hàng bán mỹ phẩm";
+            this.label1.Text = "Chương trình quản lý cửa hàng bán son mỹ phẩm";
             // 
             // label2
             // 

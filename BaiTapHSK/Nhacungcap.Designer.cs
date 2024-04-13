@@ -51,17 +51,19 @@ namespace BaiTapHSK
             // txtmancc
             // 
             this.txtmancc.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtmancc.Location = new System.Drawing.Point(175, 22);
+            this.txtmancc.Location = new System.Drawing.Point(233, 27);
+            this.txtmancc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtmancc.Name = "txtmancc";
-            this.txtmancc.Size = new System.Drawing.Size(94, 26);
+            this.txtmancc.Size = new System.Drawing.Size(124, 30);
             this.txtmancc.TabIndex = 83;
             // 
             // btntimkiem
             // 
             this.btntimkiem.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btntimkiem.Location = new System.Drawing.Point(328, 96);
+            this.btntimkiem.Location = new System.Drawing.Point(437, 118);
+            this.btntimkiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btntimkiem.Name = "btntimkiem";
-            this.btntimkiem.Size = new System.Drawing.Size(114, 34);
+            this.btntimkiem.Size = new System.Drawing.Size(152, 42);
             this.btntimkiem.TabIndex = 82;
             this.btntimkiem.Text = "Tìm kiếm";
             this.btntimkiem.UseVisualStyleBackColor = true;
@@ -70,9 +72,10 @@ namespace BaiTapHSK
             // btnthoat
             // 
             this.btnthoat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnthoat.Location = new System.Drawing.Point(472, 96);
+            this.btnthoat.Location = new System.Drawing.Point(629, 118);
+            this.btnthoat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnthoat.Name = "btnthoat";
-            this.btnthoat.Size = new System.Drawing.Size(75, 34);
+            this.btnthoat.Size = new System.Drawing.Size(100, 42);
             this.btnthoat.TabIndex = 81;
             this.btnthoat.Text = "Thoát";
             this.btnthoat.UseVisualStyleBackColor = true;
@@ -81,9 +84,10 @@ namespace BaiTapHSK
             // btnsua
             // 
             this.btnsua.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsua.Location = new System.Drawing.Point(228, 96);
+            this.btnsua.Location = new System.Drawing.Point(304, 118);
+            this.btnsua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnsua.Name = "btnsua";
-            this.btnsua.Size = new System.Drawing.Size(75, 34);
+            this.btnsua.Size = new System.Drawing.Size(100, 42);
             this.btnsua.TabIndex = 80;
             this.btnsua.Text = "Sửa";
             this.btnsua.UseVisualStyleBackColor = true;
@@ -92,9 +96,10 @@ namespace BaiTapHSK
             // btnxoa
             // 
             this.btnxoa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnxoa.Location = new System.Drawing.Point(124, 96);
+            this.btnxoa.Location = new System.Drawing.Point(165, 118);
+            this.btnxoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnxoa.Name = "btnxoa";
-            this.btnxoa.Size = new System.Drawing.Size(75, 34);
+            this.btnxoa.Size = new System.Drawing.Size(100, 42);
             this.btnxoa.TabIndex = 79;
             this.btnxoa.Text = "Xóa";
             this.btnxoa.UseVisualStyleBackColor = true;
@@ -103,9 +108,10 @@ namespace BaiTapHSK
             // btnthem
             // 
             this.btnthem.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnthem.Location = new System.Drawing.Point(18, 96);
+            this.btnthem.Location = new System.Drawing.Point(24, 118);
+            this.btnthem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnthem.Name = "btnthem";
-            this.btnthem.Size = new System.Drawing.Size(75, 34);
+            this.btnthem.Size = new System.Drawing.Size(100, 42);
             this.btnthem.TabIndex = 78;
             this.btnthem.Text = "Thêm";
             this.btnthem.UseVisualStyleBackColor = true;
@@ -115,43 +121,49 @@ namespace BaiTapHSK
             // 
             this.dg_NCC.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dg_NCC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dg_NCC.Location = new System.Drawing.Point(148, 36);
+            this.dg_NCC.Location = new System.Drawing.Point(197, 44);
+            this.dg_NCC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dg_NCC.Name = "dg_NCC";
             this.dg_NCC.RowHeadersWidth = 51;
-            this.dg_NCC.Size = new System.Drawing.Size(580, 189);
+            this.dg_NCC.Size = new System.Drawing.Size(773, 233);
             this.dg_NCC.TabIndex = 77;
+            this.dg_NCC.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dg_NCC_CellClick);
             // 
             // txtsdt
             // 
             this.txtsdt.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtsdt.Location = new System.Drawing.Point(442, 48);
+            this.txtsdt.Location = new System.Drawing.Point(589, 59);
+            this.txtsdt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtsdt.Name = "txtsdt";
-            this.txtsdt.Size = new System.Drawing.Size(104, 26);
+            this.txtsdt.Size = new System.Drawing.Size(137, 30);
             this.txtsdt.TabIndex = 76;
             // 
             // txtdiachi
             // 
             this.txtdiachi.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtdiachi.Location = new System.Drawing.Point(442, 18);
+            this.txtdiachi.Location = new System.Drawing.Point(589, 22);
+            this.txtdiachi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtdiachi.Name = "txtdiachi";
-            this.txtdiachi.Size = new System.Drawing.Size(104, 26);
+            this.txtdiachi.Size = new System.Drawing.Size(137, 30);
             this.txtdiachi.TabIndex = 75;
             // 
             // txttennhacc
             // 
             this.txttennhacc.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttennhacc.Location = new System.Drawing.Point(175, 51);
+            this.txttennhacc.Location = new System.Drawing.Point(233, 63);
+            this.txttennhacc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txttennhacc.Name = "txttennhacc";
-            this.txttennhacc.Size = new System.Drawing.Size(94, 26);
+            this.txttennhacc.Size = new System.Drawing.Size(124, 30);
             this.txttennhacc.TabIndex = 74;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(324, 51);
+            this.label4.Location = new System.Drawing.Point(432, 63);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(99, 19);
+            this.label4.Size = new System.Drawing.Size(131, 22);
             this.label4.TabIndex = 73;
             this.label4.Text = "Số Điện Thoại:";
             // 
@@ -159,9 +171,10 @@ namespace BaiTapHSK
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(324, 21);
+            this.label3.Location = new System.Drawing.Point(432, 26);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 19);
+            this.label3.Size = new System.Drawing.Size(78, 22);
             this.label3.TabIndex = 72;
             this.label3.Text = "Địa Chỉ:";
             // 
@@ -169,9 +182,10 @@ namespace BaiTapHSK
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(39, 54);
+            this.label2.Location = new System.Drawing.Point(52, 66);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(128, 19);
+            this.label2.Size = new System.Drawing.Size(159, 22);
             this.label2.TabIndex = 71;
             this.label2.Text = "Tên Nhà Cung Cấp";
             // 
@@ -179,9 +193,10 @@ namespace BaiTapHSK
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(40, 21);
+            this.label1.Location = new System.Drawing.Point(53, 26);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 19);
+            this.label1.Size = new System.Drawing.Size(161, 22);
             this.label1.TabIndex = 70;
             this.label1.Text = "Mã Nhà Cung Cấp:";
             // 
@@ -201,19 +216,20 @@ namespace BaiTapHSK
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(148, 231);
+            this.panel1.Location = new System.Drawing.Point(197, 284);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(591, 152);
+            this.panel1.Size = new System.Drawing.Size(788, 187);
             this.panel1.TabIndex = 84;
             // 
             // Nhacungcap
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(898, 426);
+            this.ClientSize = new System.Drawing.Size(1197, 524);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dg_NCC);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Nhacungcap";
             this.Text = "Nhacungcap";
             this.Load += new System.EventHandler(this.Nhacungcap_Load);
