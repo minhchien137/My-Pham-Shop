@@ -145,5 +145,10 @@ namespace BaiTapHSK
             sanpham.MdiParent = this;
             sanpham.Show();
         }
+
+        private void TrangChu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

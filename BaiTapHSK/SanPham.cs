@@ -141,16 +141,17 @@ namespace BaiTapHSK
                     cmd.Connection = cnn;
                     cmd.CommandText = "SuaSP";
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@maNCC", txtmancc.Text);
+                    cmd.Parameters.AddWithValue("@MaNCC", txtmancc.Text);
                     cmd.Parameters.AddWithValue("@masp", txtmasp.Text);
                     cmd.Parameters.AddWithValue("@tensp", txttensp.Text);
                     cmd.Parameters.AddWithValue("@Soluong", txtsoluong.Text);
                     cmd.Parameters.AddWithValue("@giahang", txttgiahang.Text);
                     cmd.Parameters.AddWithValue("@trongluong", txtTrongluong.Text);
                     cmd.Parameters.AddWithValue("@mausac", txtMausac.Text);
-                    cmd.Parameters.AddWithValue("@loaison", txtLoaison.Text);
+                    cmd.Parameters.AddWithValue("@loason", txtLoaison.Text);
                     cmd.Parameters.AddWithValue("@hangsanpham", txtHangsanpham.Text);
                     cmd.Parameters.AddWithValue("@ngayhethan", txtNgayhethan.Text);
+                    cnn.Open();
                     cmd.ExecuteNonQuery();
                     SanPham_Load(sender, e);
                 }
@@ -188,7 +189,27 @@ namespace BaiTapHSK
                     string rowFilter = string.Format("{0} like '{1}'", "sTenSP", "*" + txttensp.Text + "*");
                     (dg_SP.DataSource as DataTable).DefaultView.RowFilter = rowFilter;
                 }
+                if(txtHangsanpham.Text != "")
+                {
+                    string rowFilter = string.Format("{0} like '{1}'", "sHangSanPham", "*" + txtHangsanpham.Text + "*");
+                    (dg_SP.DataSource as DataTable).DefaultView.RowFilter = rowFilter;
+                }
+                if(txtMausac.Text != "")
+                {
+                    string rowFilter = string.Format("{0} like '{1}'", "sMauSac", "*" + txtMausac.Text + "*");
+                    (dg_SP.DataSource as DataTable).DefaultView.RowFilter = rowFilter;
 
+                }
+                if(txtLoaison.Text != "")
+                {
+                    string rowFilter = string.Format("{0} like '{1}'", "sLoaiSon", "*" + txtLoaison.Text + "*");
+                    (dg_SP.DataSource as DataTable).DefaultView.RowFilter = rowFilter;
+                }
+                if (txtTrongluong.Text != "")
+                {
+                    string rowFilter = string.Format("{0} like '{1}'", "fTrongLuong", "*" + txtTrongluong.Text + "*");
+                    (dg_SP.DataSource as DataTable).DefaultView.RowFilter = rowFilter;
+                }
             }
 
         }

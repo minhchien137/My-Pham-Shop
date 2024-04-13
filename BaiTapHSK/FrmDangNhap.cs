@@ -54,9 +54,10 @@ namespace BaiTapHSK
                 while (reader.Read())
                 {
                     MessageBox.Show("Bạn đã đang nhập thành công . Bạn có thể sử dụng các chức năng ngay bây giờ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.DialogResult = DialogResult.OK;
+                    this.DialogResult = DialogResult.OK; 
                     //HeThong heThong = new HeThong(IsLogger);
-                    this.Close();
+                    TrangChu trangChu = new TrangChu();
+                    trangChu.Show();
 
                 }
             }
