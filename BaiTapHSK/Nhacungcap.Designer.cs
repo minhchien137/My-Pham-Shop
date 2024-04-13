@@ -44,6 +44,7 @@ namespace BaiTapHSK
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnBoqua = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dg_NCC)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -60,10 +61,10 @@ namespace BaiTapHSK
             // btntimkiem
             // 
             this.btntimkiem.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btntimkiem.Location = new System.Drawing.Point(437, 118);
+            this.btntimkiem.Location = new System.Drawing.Point(411, 118);
             this.btntimkiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btntimkiem.Name = "btntimkiem";
-            this.btntimkiem.Size = new System.Drawing.Size(152, 42);
+            this.btntimkiem.Size = new System.Drawing.Size(108, 42);
             this.btntimkiem.TabIndex = 82;
             this.btntimkiem.Text = "Tìm kiếm";
             this.btntimkiem.UseVisualStyleBackColor = true;
@@ -72,7 +73,7 @@ namespace BaiTapHSK
             // btnthoat
             // 
             this.btnthoat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnthoat.Location = new System.Drawing.Point(629, 118);
+            this.btnthoat.Location = new System.Drawing.Point(673, 118);
             this.btnthoat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnthoat.Name = "btnthoat";
             this.btnthoat.Size = new System.Drawing.Size(100, 42);
@@ -84,7 +85,7 @@ namespace BaiTapHSK
             // btnsua
             // 
             this.btnsua.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsua.Location = new System.Drawing.Point(304, 118);
+            this.btnsua.Location = new System.Drawing.Point(278, 118);
             this.btnsua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnsua.Name = "btnsua";
             this.btnsua.Size = new System.Drawing.Size(100, 42);
@@ -96,7 +97,7 @@ namespace BaiTapHSK
             // btnxoa
             // 
             this.btnxoa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnxoa.Location = new System.Drawing.Point(165, 118);
+            this.btnxoa.Location = new System.Drawing.Point(151, 118);
             this.btnxoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnxoa.Name = "btnxoa";
             this.btnxoa.Size = new System.Drawing.Size(100, 42);
@@ -203,6 +204,7 @@ namespace BaiTapHSK
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.panel1.Controls.Add(this.btnBoqua);
             this.panel1.Controls.Add(this.txtmancc);
             this.panel1.Controls.Add(this.btntimkiem);
             this.panel1.Controls.Add(this.btnthoat);
@@ -221,6 +223,18 @@ namespace BaiTapHSK
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(788, 187);
             this.panel1.TabIndex = 84;
+            // 
+            // btnBoqua
+            // 
+            this.btnBoqua.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBoqua.Location = new System.Drawing.Point(539, 118);
+            this.btnBoqua.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBoqua.Name = "btnBoqua";
+            this.btnBoqua.Size = new System.Drawing.Size(108, 42);
+            this.btnBoqua.TabIndex = 84;
+            this.btnBoqua.Text = "Bỏ qua";
+            this.btnBoqua.UseVisualStyleBackColor = true;
+            this.btnBoqua.Click += new System.EventHandler(this.btnBoqua_Click);
             // 
             // Nhacungcap
             // 
@@ -257,5 +271,6 @@ namespace BaiTapHSK
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnBoqua;
     }
 }

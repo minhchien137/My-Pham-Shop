@@ -164,5 +164,13 @@ namespace BaiTapHSK
             txtdiachi.Text = dg_NCC.CurrentRow.Cells["sDiachi"].Value.ToString();
             txtsdt.Text = dg_NCC.CurrentRow.Cells["sSDT"].Value.ToString();
         }
+
+        private void btnBoqua_Click(object sender, EventArgs e)
+        {
+            txtmancc.Text = "";
+            txtsdt.Text = "";
+            txtdiachi.Text = "";
+            txttennhacc.Text = "";
+        }
     }
 }
