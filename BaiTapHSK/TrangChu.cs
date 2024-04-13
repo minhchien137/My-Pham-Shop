@@ -189,21 +189,11 @@ namespace BaiTapHSK
             dangki.Show();
         }
 
-        private void sảnPhẩmToolStripMenuItem2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void sảnPhẩmToolStripMenuItem_Click_1(object sender, EventArgs e)
+        private void sảnPhẩmToolStripMenuItem3_Click(object sender, EventArgs e)
         {
             SanPham sanpham = new SanPham();
             sanpham.MdiParent = this;
             sanpham.Show();
-        }
-
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
         }
     }
 }
