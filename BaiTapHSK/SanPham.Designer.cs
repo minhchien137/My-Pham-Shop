@@ -48,6 +48,16 @@ namespace BaiTapHSK
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnBoqua = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtTrongluong = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtMausac = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtLoaison = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtHangsanpham = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtNgayhethan = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dg_SP)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -75,7 +85,7 @@ namespace BaiTapHSK
             // btntimkiem
             // 
             this.btntimkiem.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btntimkiem.Location = new System.Drawing.Point(446, 138);
+            this.btntimkiem.Location = new System.Drawing.Point(449, 245);
             this.btntimkiem.Margin = new System.Windows.Forms.Padding(4);
             this.btntimkiem.Name = "btntimkiem";
             this.btntimkiem.Size = new System.Drawing.Size(129, 42);
@@ -87,7 +97,7 @@ namespace BaiTapHSK
             // btnthoat
             // 
             this.btnthoat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnthoat.Location = new System.Drawing.Point(754, 138);
+            this.btnthoat.Location = new System.Drawing.Point(806, 245);
             this.btnthoat.Margin = new System.Windows.Forms.Padding(4);
             this.btnthoat.Name = "btnthoat";
             this.btnthoat.Size = new System.Drawing.Size(114, 42);
@@ -99,7 +109,7 @@ namespace BaiTapHSK
             // btnsua
             // 
             this.btnsua.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsua.Location = new System.Drawing.Point(305, 138);
+            this.btnsua.Location = new System.Drawing.Point(302, 245);
             this.btnsua.Margin = new System.Windows.Forms.Padding(4);
             this.btnsua.Name = "btnsua";
             this.btnsua.Size = new System.Drawing.Size(100, 42);
@@ -111,7 +121,7 @@ namespace BaiTapHSK
             // btnxoa
             // 
             this.btnxoa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnxoa.Location = new System.Drawing.Point(172, 138);
+            this.btnxoa.Location = new System.Drawing.Point(162, 245);
             this.btnxoa.Margin = new System.Windows.Forms.Padding(4);
             this.btnxoa.Name = "btnxoa";
             this.btnxoa.Size = new System.Drawing.Size(100, 42);
@@ -123,7 +133,7 @@ namespace BaiTapHSK
             // btnthem
             // 
             this.btnthem.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnthem.Location = new System.Drawing.Point(43, 138);
+            this.btnthem.Location = new System.Drawing.Point(27, 245);
             this.btnthem.Margin = new System.Windows.Forms.Padding(4);
             this.btnthem.Name = "btnthem";
             this.btnthem.Size = new System.Drawing.Size(100, 42);
@@ -227,6 +237,16 @@ namespace BaiTapHSK
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.panel1.Controls.Add(this.txtNgayhethan);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.txtHangsanpham);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.txtLoaison);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.txtMausac);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.txtTrongluong);
+            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.btnBoqua);
             this.panel1.Controls.Add(this.txttgiahang);
             this.panel1.Controls.Add(this.label10);
@@ -246,14 +266,14 @@ namespace BaiTapHSK
             this.panel1.Location = new System.Drawing.Point(57, 271);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(956, 234);
+            this.panel1.Size = new System.Drawing.Size(968, 291);
             this.panel1.TabIndex = 91;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btnBoqua
             // 
             this.btnBoqua.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBoqua.Location = new System.Drawing.Point(610, 138);
+            this.btnBoqua.Location = new System.Drawing.Point(633, 245);
             this.btnBoqua.Margin = new System.Windows.Forms.Padding(4);
             this.btnBoqua.Name = "btnBoqua";
             this.btnBoqua.Size = new System.Drawing.Size(114, 42);
@@ -272,6 +292,106 @@ namespace BaiTapHSK
             this.label12.TabIndex = 92;
             this.label12.Text = "Quản lý sản phẩm";
             this.label12.Click += new System.EventHandler(this.label12_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(496, 88);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(113, 22);
+            this.label5.TabIndex = 87;
+            this.label5.Text = "Trọng lượng:";
+            // 
+            // txtTrongluong
+            // 
+            this.txtTrongluong.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTrongluong.Location = new System.Drawing.Point(657, 88);
+            this.txtTrongluong.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTrongluong.Name = "txtTrongluong";
+            this.txtTrongluong.Size = new System.Drawing.Size(280, 30);
+            this.txtTrongluong.TabIndex = 88;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(39, 133);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(82, 22);
+            this.label6.TabIndex = 89;
+            this.label6.Text = "Màu sắc:";
+            // 
+            // txtMausac
+            // 
+            this.txtMausac.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMausac.Location = new System.Drawing.Point(172, 130);
+            this.txtMausac.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMausac.Name = "txtMausac";
+            this.txtMausac.Size = new System.Drawing.Size(259, 30);
+            this.txtMausac.TabIndex = 90;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(500, 130);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(84, 22);
+            this.label7.TabIndex = 91;
+            this.label7.Text = "Loại son:";
+            // 
+            // txtLoaison
+            // 
+            this.txtLoaison.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLoaison.Location = new System.Drawing.Point(657, 127);
+            this.txtLoaison.Margin = new System.Windows.Forms.Padding(4);
+            this.txtLoaison.Name = "txtLoaison";
+            this.txtLoaison.Size = new System.Drawing.Size(280, 30);
+            this.txtLoaison.TabIndex = 92;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(39, 184);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(135, 22);
+            this.label8.TabIndex = 93;
+            this.label8.Text = "Hãng sản phẩm:";
+            // 
+            // txtHangsanpham
+            // 
+            this.txtHangsanpham.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHangsanpham.Location = new System.Drawing.Point(172, 181);
+            this.txtHangsanpham.Margin = new System.Windows.Forms.Padding(4);
+            this.txtHangsanpham.Name = "txtHangsanpham";
+            this.txtHangsanpham.Size = new System.Drawing.Size(259, 30);
+            this.txtHangsanpham.TabIndex = 94;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(496, 181);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(117, 22);
+            this.label9.TabIndex = 95;
+            this.label9.Text = "Ngày hết hạn:";
+            // 
+            // txtNgayhethan
+            // 
+            this.txtNgayhethan.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNgayhethan.Location = new System.Drawing.Point(657, 178);
+            this.txtNgayhethan.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNgayhethan.Name = "txtNgayhethan";
+            this.txtNgayhethan.Size = new System.Drawing.Size(280, 30);
+            this.txtNgayhethan.TabIndex = 96;
             // 
             // SanPham
             // 
@@ -313,5 +433,15 @@ namespace BaiTapHSK
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button btnBoqua;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtHangsanpham;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtLoaison;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtMausac;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtTrongluong;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtNgayhethan;
     }
 }

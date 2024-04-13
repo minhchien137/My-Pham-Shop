@@ -40,6 +40,11 @@ namespace BaiTapHSK
                     dg_SP.Columns[2].HeaderText = "Mã Nhà Cung Cấp";
                     dg_SP.Columns[3].HeaderText = "Số lượng";
                     dg_SP.Columns[4].HeaderText = "Giá Hàng";
+                    dg_SP.Columns[5].HeaderText = "Trọng lượng";
+                    dg_SP.Columns[6].HeaderText = "Màu sắc";
+                    dg_SP.Columns[7].HeaderText = "Loại son";
+                    dg_SP.Columns[8].HeaderText = "Hãng sản phẩm";
+                    dg_SP.Columns[9].HeaderText = "Ngày hết hạn";
 
                 }
 
@@ -57,11 +62,16 @@ namespace BaiTapHSK
                     cmd.Connection = cnn;
                     cmd.CommandText = "Themsp";
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@MaNCC", txtmancc.Text);
+                    cmd.Parameters.AddWithValue("@maNCC", txtmancc.Text);
                     cmd.Parameters.AddWithValue("@masp", txtmasp.Text);
                     cmd.Parameters.AddWithValue("@tensp", txttensp.Text);
                     cmd.Parameters.AddWithValue("@Soluong", txtsoluong.Text);
                     cmd.Parameters.AddWithValue("@giahang", txttgiahang.Text);
+                    cmd.Parameters.AddWithValue("@trongluong", txtTrongluong.Text);
+                    cmd.Parameters.AddWithValue("@mausac", txtMausac.Text);
+                    cmd.Parameters.AddWithValue("@loaison", txtLoaison.Text);
+                    cmd.Parameters.AddWithValue("@hangsanpham", txtHangsanpham.Text);
+                    cmd.Parameters.AddWithValue("@ngayhethan", txtNgayhethan.Text);
 
 
 
@@ -131,11 +141,16 @@ namespace BaiTapHSK
                     cmd.Connection = cnn;
                     cmd.CommandText = "SuaSP";
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@MaNCC", txtmancc.Text);
+                    cmd.Parameters.AddWithValue("@maNCC", txtmancc.Text);
                     cmd.Parameters.AddWithValue("@masp", txtmasp.Text);
                     cmd.Parameters.AddWithValue("@tensp", txttensp.Text);
                     cmd.Parameters.AddWithValue("@Soluong", txtsoluong.Text);
                     cmd.Parameters.AddWithValue("@giahang", txttgiahang.Text);
+                    cmd.Parameters.AddWithValue("@trongluong", txtTrongluong.Text);
+                    cmd.Parameters.AddWithValue("@mausac", txtMausac.Text);
+                    cmd.Parameters.AddWithValue("@loaison", txtLoaison.Text);
+                    cmd.Parameters.AddWithValue("@hangsanpham", txtHangsanpham.Text);
+                    cmd.Parameters.AddWithValue("@ngayhethan", txtNgayhethan.Text);
                     cmd.ExecuteNonQuery();
                     SanPham_Load(sender, e);
                 }
@@ -185,6 +200,11 @@ namespace BaiTapHSK
             txttensp.Text = dg_SP.CurrentRow.Cells["sTenSP"].Value.ToString();
             txttgiahang.Text = dg_SP.CurrentRow.Cells["fGiaHang"].Value.ToString();
             txtsoluong.Text = dg_SP.CurrentRow.Cells["iSoLuong"].Value.ToString();
+            txtTrongluong.Text = dg_SP.CurrentRow.Cells["fTrongLuong"].Value.ToString();
+            txtMausac.Text = dg_SP.CurrentRow.Cells["sMausac"].Value.ToString();
+            txtLoaison.Text = dg_SP.CurrentRow.Cells["sLoaiSon"].Value.ToString();
+            txtHangsanpham.Text = dg_SP.CurrentRow.Cells["sHangSanPham"].Value.ToString();
+            txtNgayhethan.Text = dg_SP.CurrentRow.Cells["dNgayHetHan"].Value.ToString();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -209,6 +229,11 @@ namespace BaiTapHSK
             txtsoluong.Text = "";
             txttensp.Text = "";
             txttgiahang.Text = "";
+            txtTrongluong.Text = "";
+            txtMausac.Text = "";
+            txtLoaison.Text = "";
+            txtHangsanpham.Text = "";
+            txtNgayhethan.Text = "";
         }
     }
 }
