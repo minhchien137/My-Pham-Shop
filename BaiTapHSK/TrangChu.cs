@@ -201,39 +201,9 @@ namespace BaiTapHSK
             sanpham.Show();
         }
 
-        private void chiTiếtSảnPhẩmSonToolStripMenuItem_Click(object sender, EventArgs e)
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
-            ChiTietSanPhamSon chiTietSanPhamSon = new ChiTietSanPhamSon();
-            chiTietSanPhamSon.MdiParent = this;
-            chiTietSanPhamSon.Show();
-        }
 
-        private void chiTiếtMặtNạToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ChiTietSanPhamMatNa chiTietSanPhamMatNa = new ChiTietSanPhamMatNa();
-            chiTietSanPhamMatNa.MdiParent = this;
-            chiTietSanPhamMatNa.Show();
-        }
-
-        private void chiTiếtSữaRửaMặtToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ChiTietSanPhamSuaRuaMat chiTietSanPhamSuaRuaMat = new ChiTietSanPhamSuaRuaMat();
-            chiTietSanPhamSuaRuaMat.MdiParent = this;
-            chiTietSanPhamSuaRuaMat.Show();
-        }
-
-        private void chiTiếtNướcHoaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ChiTietSanPhamNuocHoa chiTietSanPhamNuocHoa = new ChiTietSanPhamNuocHoa();
-            chiTietSanPhamNuocHoa.MdiParent = this;
-            chiTietSanPhamNuocHoa.Show();
-        }
-
-        private void chiTiếtTonerToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ChiTietSanPhamToner chiTietSanPhamToner = new ChiTietSanPhamToner();
-            chiTietSanPhamToner.MdiParent = this;
-            chiTietSanPhamToner.Show();
         }
     }
 }

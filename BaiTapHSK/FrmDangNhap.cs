@@ -32,7 +32,7 @@ namespace BaiTapHSK
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            string conn = "Data Source = MSI\\MINHCHIEN ;Initial Catalog = QLBanMyPham;User ID = sa;Password = 123";
+            string conn = "Data Source=MSI\\MINHCHIEN;Initial Catalog=QLBanMyPham;Integrated Security=True";
             string querry = "SELECT * FROM dbo.tblTaiKhoan Where @sTaiKhoan = sTenTaiKhoan and @sMatKhau = sMatKhau";
 
             SqlConnection sqlConnection = new SqlConnection(conn);

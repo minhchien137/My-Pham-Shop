@@ -20,7 +20,7 @@ namespace BaiTapHSK
 
         private void btnDangKi_Click(object sender, EventArgs e)
         {
-            string conn = "Data Source = MSI\\MINHCHIEN ;Initial Catalog = QLBanMyPham;User ID = sa;Password = 123";
+            string conn = "Data Source=MSI\\MINHCHIEN;Initial Catalog=QLBanMyPham;Integrated Security=True";
             SqlConnection sqlConnection = new SqlConnection(conn);
             if (sqlConnection.State != ConnectionState.Open)
             {
