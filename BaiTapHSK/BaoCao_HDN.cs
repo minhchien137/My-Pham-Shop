@@ -19,15 +19,21 @@ namespace BaiTapHSK
         {
             InitializeComponent();
         }
-
-        private void BaoCao_HDN_Load(object sender, EventArgs e)
+        private void report()
         {
             ReportDocument cry = new ReportDocument();
             cry.Load(@"C:\DDDD\BaiTapHSK\BaiTapHSK\HDN.rpt");
             crystalReportViewer1.ReportSource = cry;
             crystalReportViewer1.Refresh();
+
         }
 
+        private void BaoCao_HDN_Load(object sender, EventArgs e)
+        {
+            report();
+        }
+
+        /*
         private void btn_Xem_Click(object sender, EventArgs e)
         {
             ReportDocument crys = new ReportDocument();
@@ -71,8 +77,13 @@ namespace BaiTapHSK
             crystalReportViewer1.ReportSource = crys;
             crystalReportViewer1.Refresh();
         }
-
+        */
         private void txt_MaHD_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
