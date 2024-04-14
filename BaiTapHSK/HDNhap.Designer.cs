@@ -42,7 +42,6 @@ namespace BaiTapHSK
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnRefresh = new System.Windows.Forms.Button();
-            this.btninrpnhap = new System.Windows.Forms.Button();
             this.btnboqua = new System.Windows.Forms.Button();
             this.btntimkiem = new System.Windows.Forms.Button();
             this.btnsua = new System.Windows.Forms.Button();
@@ -185,7 +184,6 @@ namespace BaiTapHSK
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.panel1.Controls.Add(this.btnRefresh);
-            this.panel1.Controls.Add(this.btninrpnhap);
             this.panel1.Controls.Add(this.btnboqua);
             this.panel1.Controls.Add(this.btntimkiem);
             this.panel1.Controls.Add(this.btnsua);
@@ -211,20 +209,6 @@ namespace BaiTapHSK
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
-            // 
-            // btninrpnhap
-            // 
-            this.btninrpnhap.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btninrpnhap.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btninrpnhap.Location = new System.Drawing.Point(952, 10);
-            this.btninrpnhap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btninrpnhap.Name = "btninrpnhap";
-            this.btninrpnhap.Size = new System.Drawing.Size(93, 34);
-            this.btninrpnhap.TabIndex = 5;
-            this.btninrpnhap.Text = "in rp";
-            this.btninrpnhap.UseVisualStyleBackColor = true;
-            this.btninrpnhap.Click += new System.EventHandler(this.btninrpnhap_Click);
             // 
             // btnboqua
             // 
@@ -327,7 +311,6 @@ namespace BaiTapHSK
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dgvhoadonnhap;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btninrpnhap;
         private System.Windows.Forms.Button btnboqua;
         private System.Windows.Forms.Button btntimkiem;
         private System.Windows.Forms.Button btnsua;
