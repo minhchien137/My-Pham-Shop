@@ -23,7 +23,7 @@ namespace BaiTapHSK
         private void BaoCao_HDN_Load(object sender, EventArgs e)
         {
             ReportDocument cry = new ReportDocument();
-            cry.Load(@"C:\Users\Ha Phuong\Downloads\BaiTapHSK (1)\BaiTapHSK\BaiTapHSK\HDN.rpt");
+            cry.Load(@"C:\DDDD\BaiTapHSK\BaiTapHSK\HDN.rpt");
             crystalReportViewer1.ReportSource = cry;
             crystalReportViewer1.Refresh();
         }
@@ -31,7 +31,7 @@ namespace BaiTapHSK
         private void btn_Xem_Click(object sender, EventArgs e)
         {
             ReportDocument crys = new ReportDocument();
-            crys.Load(@"C:\Users\Ha Phuong\Downloads\BaiTapHSK (1)\BaiTapHSK\BaiTapHSK\HDN.rpt");
+            crys.Load(@"C:\DDDD\BaiTapHSK\BaiTapHSK\HDN.rpt");
             ParameterFieldDefinition pfds = crys.DataDefinition.ParameterFields["TenNV"];
             ParameterValues pvs = new ParameterValues();
             ParameterDiscreteValue pdvs = new ParameterDiscreteValue();
