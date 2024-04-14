@@ -45,38 +45,40 @@ namespace BaiTapHSK
             this.crystalReportViewer1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.crystalReportViewer1.Location = new System.Drawing.Point(44, 30);
+            this.crystalReportViewer1.Location = new System.Drawing.Point(59, 37);
+            this.crystalReportViewer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.Size = new System.Drawing.Size(716, 289);
+            this.crystalReportViewer1.Size = new System.Drawing.Size(954, 355);
             this.crystalReportViewer1.TabIndex = 0;
+            this.crystalReportViewer1.ToolPanelWidth = 267;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(25, 9);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(33, 11);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 21);
+            this.label5.Size = new System.Drawing.Size(123, 26);
             this.label5.TabIndex = 21;
             this.label5.Text = "Mã hóa đơn";
             // 
             // txt_MaHD
             // 
             this.txt_MaHD.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_MaHD.Location = new System.Drawing.Point(187, 9);
-            this.txt_MaHD.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_MaHD.Location = new System.Drawing.Point(249, 11);
+            this.txt_MaHD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_MaHD.Name = "txt_MaHD";
-            this.txt_MaHD.Size = new System.Drawing.Size(250, 26);
+            this.txt_MaHD.Size = new System.Drawing.Size(332, 30);
             this.txt_MaHD.TabIndex = 20;
+            this.txt_MaHD.TextChanged += new System.EventHandler(this.txt_MaHD_TextChanged);
             // 
             // btn_Xem
             // 
             this.btn_Xem.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Xem.Location = new System.Drawing.Point(490, 21);
-            this.btn_Xem.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Xem.Location = new System.Drawing.Point(653, 26);
+            this.btn_Xem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Xem.Name = "btn_Xem";
-            this.btn_Xem.Size = new System.Drawing.Size(56, 32);
+            this.btn_Xem.Size = new System.Drawing.Size(75, 39);
             this.btn_Xem.TabIndex = 19;
             this.btn_Xem.Text = "Xem";
             this.btn_Xem.UseVisualStyleBackColor = true;
@@ -85,20 +87,19 @@ namespace BaiTapHSK
             // txt_tenNV
             // 
             this.txt_tenNV.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_tenNV.Location = new System.Drawing.Point(187, 46);
-            this.txt_tenNV.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_tenNV.Location = new System.Drawing.Point(249, 57);
+            this.txt_tenNV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_tenNV.Name = "txt_tenNV";
-            this.txt_tenNV.Size = new System.Drawing.Size(250, 26);
+            this.txt_tenNV.Size = new System.Drawing.Size(332, 30);
             this.txt_tenNV.TabIndex = 18;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(25, 42);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(33, 52);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(114, 21);
+            this.label2.Size = new System.Drawing.Size(146, 26);
             this.label2.TabIndex = 16;
             this.label2.Text = "Tên nhân viên";
             // 
@@ -110,18 +111,20 @@ namespace BaiTapHSK
             this.panel1.Controls.Add(this.btn_Xem);
             this.panel1.Controls.Add(this.txt_tenNV);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(113, 332);
+            this.panel1.Location = new System.Drawing.Point(151, 409);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(624, 92);
+            this.panel1.Size = new System.Drawing.Size(832, 113);
             this.panel1.TabIndex = 22;
             // 
             // BaoCao_HDN
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.crystalReportViewer1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "BaoCao_HDN";
             this.Text = "BaoCao_HDN";
             this.Load += new System.EventHandler(this.BaoCao_HDN_Load);

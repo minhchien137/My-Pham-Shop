@@ -19,7 +19,7 @@ namespace BaiTapHSK
         private void report()
         {
             ReportDocument cry = new ReportDocument();
-            cry.Load(@"C:\Users\Ha Phuong\Downloads\BaiTapHSK (1)\BaiTapHSK\BaiTapHSK\HDB.rpt");
+            cry.Load(@"C:\DDDD\BaiTapHSK\BaiTapHSK\HDB.rpt");
             crystalReportViewer1.ReportSource = cry;
             crystalReportViewer1.Refresh();
 
@@ -38,11 +38,11 @@ namespace BaiTapHSK
         {
 
         }
-
+        /*
         private void btn_Xem_Click(object sender, EventArgs e)
         {
             ReportDocument crys = new ReportDocument();
-            crys.Load(@"C:\Users\Ha Phuong\Downloads\BaiTapHSK (1)\BaiTapHSK\BaiTapHSK\HDB.rpt");
+            crys.Load(@"C:\DDDD\BaiTapHSK\BaiTapHSK\HDB.rpt");
             crys.RecordSelectionFormula = "{tblNhanVien.sHoTen}={?TenNV} or{tblKhachHang.sHoTen}={?TenKH} ";
             ParameterFieldDefinition pfd = crys.DataDefinition.ParameterFields["TenKH"];
             ParameterValues pv = new ParameterValues();
@@ -133,10 +133,13 @@ namespace BaiTapHSK
            
 
         }
+        */
+
+        /*
 
         private void btn_maxTien_Click(object sender, EventArgs e)
         {
-            string conn = "Data Source=DESKTOP-JER45F2\\SQLEXPRESS;Initial Catalog=QLBanMyPham;Integrated Security=True";
+            string conn = "Data Source=MSI\\MINHCHIEN;Initial Catalog=QLBanMyPham;Integrated Security=True";
             SqlConnection sqlConnection = new SqlConnection(conn);
             if (sqlConnection.State != ConnectionState.Open)
             {
@@ -167,7 +170,7 @@ namespace BaiTapHSK
 
         private void btnKhoangTT_Click(object sender, EventArgs e)
         {
-            string conn = "Data Source=DESKTOP-JER45F2\\SQLEXPRESS;Initial Catalog=QLBanMyPham;Integrated Security=True";
+            string conn = "Data Source=MSI\\MINHCHIEN;Initial Catalog=QLBanMyPham;Integrated Security=True";
             SqlConnection sqlConnection = new SqlConnection(conn);
             if (sqlConnection.State != ConnectionState.Open)
             {
@@ -190,7 +193,7 @@ namespace BaiTapHSK
 
         private void btnHDNgayGiao_Click(object sender, EventArgs e)
         {
-            string conn = "Data Source=DESKTOP-JER45F2\\SQLEXPRESS;Initial Catalog=QLBanMyPham;Integrated Security=True";
+            string conn = "Data Source=MSI\\MINHCHIEN;Initial Catalog=QLBanMyPham;Integrated Security=True";
             SqlConnection sqlConnection = new SqlConnection(conn);
             if (sqlConnection.State != ConnectionState.Open)
             {
@@ -210,5 +213,6 @@ namespace BaiTapHSK
             cpt.SetDataSource(dt);
             crystalReportViewer1.ReportSource = cpt;
         }
+        */
     }
 }

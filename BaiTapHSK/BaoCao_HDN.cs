@@ -71,5 +71,10 @@ namespace BaiTapHSK
             crystalReportViewer1.ReportSource = crys;
             crystalReportViewer1.Refresh();
         }
+
+        private void txt_MaHD_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
